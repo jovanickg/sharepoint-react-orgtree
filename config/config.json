@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "org-tree-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/orgTree/OrgTreeWebPart.js",
+          "manifest": "./src/webparts/orgTree/OrgTreeWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "OrgTreeWebPartStrings": "lib/webparts/orgTree/loc/{locale}.js"
+  }
+}

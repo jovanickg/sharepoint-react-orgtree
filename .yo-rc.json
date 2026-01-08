@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "nodeVersion": "22.14.0",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "employee-carousel",
+    "libraryId": "dd2faace-3c89-47b3-aaed-4e6852a5f4fc",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "employee-carousel",
+    "solutionShortDescription": "employee-carousel description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

@@ -1,0 +1,166 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.orgContainer {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-sizing: border-box;
+  overflow: hidden; /* Contains the scrollbar inside border */
+  
+  /* Toolbar styling */
+  .toolbar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+    background: white;
+    padding: 6px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    gap: 6px;
+    border: 1px solid #eaeaea;
+
+    button {
+      width: 32px;
+      height: 32px;
+      border: 1px solid #f3f2f1;
+      background: white;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #0083ca;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: #f3f2f1;
+        border-color: #0083ca;
+      }
+    }
+  }
+
+  /* The Scrollable Area */
+  /* The Scrollable Area */
+  .scrollArea {
+    width: 100%;
+    height: 650px;
+    overflow: auto;
+    border-radius: 8px;
+    position: relative;
+    cursor: grab; /* Indicates draggable */
+    
+    /* Prevent text selection while dragging */
+    user-select: none; 
+
+    &:active {
+      cursor: grabbing;
+    }
+    
+    /* Custom Scrollbar */
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #c8c6c4;
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #f3f2f1;
+    }
+  }
+
+  /* The Scalable Tree Wrapper */
+  .treeWrapper {
+    display: inline-block;
+    min-width: 100%;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    transform-origin: top center;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-align: center;
+  }
+}
+
+/* Node Card Styling */
+.nodeCard {
+  display: inline-flex;
+  flex-direction: column;
+  width: 280px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  overflow: hidden;
+  margin: 0 10px;
+  /* Border top color is handled inline in TSX because it's dynamic */
+
+  .header {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eaeaea;
+    
+    .title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #201f1e;
+      text-transform: uppercase;
+    }
+    .subTitle {
+      font-size: 11px;
+      color: #605e5c;
+      margin-top: 4px;
+    }
+  }
+
+  .body {
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+    
+    /* Employee Row */
+    .empRow {
+      display: flex;
+      align-items: center;
+      padding: 8px 10px;
+      border-bottom: 1px solid #f3f2f1;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 12px;
+        border: 1px solid #eaeaea;
+      }
+
+      .empInfo {
+        overflow: hidden;
+        .empName { font-size: 13px; font-weight: 600; color: #323130; }
+        .empJob { font-size: 11px; color: #605e5c; }
+      }
+    }
+  }
+
+  /* Contractor Specifics */
+  .contractorSection {
+    border-top: 2px dashed #7fbcdb;
+    background-color: #fdfeff;
+
+    .sectionHeader {
+      padding: 6px 15px;
+      background-color: #e6f4f9;
+      color: #005a83;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}

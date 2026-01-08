@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-modern-org-chart-solution",
+    "id": "8a4f9b2e-7c3d-4e5f-9a1b-2c3d4e5f6a7b",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Lulz Builds Stuff",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "A customizable, list-driven Organization Chart for SharePoint."
+      },
+      "longDescription": {
+        "default": "Visualizes organizational hierarchy using SharePoint lists data with support for zooming, panning, and print layouts."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Modern Org Chart Feature",
+        "description": "Activates the Org Chart web part.",
+        "id": "c2d3e4f5-a6b7-8c9d-0e1f-2a3b4c5d6e7f",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-modern-org-chart.sppkg"
+  }
+}

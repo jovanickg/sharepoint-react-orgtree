@@ -1,3 +1,25 @@
+# =========================
+# SharePoint Framework (SPFx)
+# =========================
+lib/
+temp/
+release/
+sharepoint/solution/debug/
+sharepoint/solution/*.sppkg
+# Keep the main solution folder, but ignore the debug builds inside it
+
+# =========================
+# OS & Editor Junk
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Standard Node & Web (Your original list)
+# =========================
+
 # Logs
 logs
 *.log
